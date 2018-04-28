@@ -1,0 +1,118 @@
+@font-face{font-family:'Proxima Nova Rg';src:url(../fonts/ProximaNova-Regular.eot);src:local('../fonts/Proxima Nova Regular'),local('../fonts/ProximaNova-Regular'),url(../fonts/ProximaNova-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Regular.woff) format("woff"),url(../fonts/ProximaNova-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Proxima Nova SBold';src:url(../fonts/ProximaNova-Semibold.eot);src:local('../fonts/Proxima Nova Semibold'),local('../fonts/ProximaNova-Semibold'),url(../fonts/ProximaNova-Semibold.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Semibold.woff) format("woff"),url(../fonts/ProximaNova-Semibold.ttf) format("truetype");font-weight:600;font-style:normal}
+@font-face{font-family:'Proxima Nova EBold';src:url(../fonts/ProximaNova-Extrabld.eot);src:local('../fonts/Proxima Nova Extrabold'),local('../fonts/ProximaNova-Extrabld'),url(../fonts/ProximaNova-Extrabld.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Extrabld.woff) format("woff"),url(../fonts/ProximaNova-Extrabld.ttf) format("truetype");font-weight:800;font-style:normal}
+@font-face{font-family:'Proxima Nova Bold';src:url(../fonts/ProximaNova-Bold.eot);src:local('../fonts/Proxima Nova Bold'),local('../fonts/ProximaNova-Bold'),url(../fonts/ProximaNova-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/ProximaNova-Bold.woff) format("woff"),url(../fonts/ProximaNova-Bold.ttf) format("truetype");font-weight:700;font-style:normal}
+
+html{font-family:'Proxima Nova Rg';color:#242424;font-size:16px;line-height:normal}
+
+.uk-container{max-width:1136px}
+a{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
+a:hover,a:focus{color:#38a01e;-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
+b,strong{font-family:'Proxima Nova Bold',sans-serif;font-weight:normal}
+.main{margin:30px auto 60px}
+
+header{padding:40px 0;background:#f7f7f7}
+header .uk-logo{margin:0 25px 0 -5px;display:inline-block}
+header .city{color:#42bb25;border-bottom:1px dashed}
+header .city:hover{color:#3fb322;border:none;text-decoration:none}
+header .link{font:20px 'Proxima Nova Bold',sans-serif;color:#414441;vertical-align:middle}
+header .link.email{padding-left:35px;background:url(../images/awesome/header_email.png) no-repeat left}
+header .phone.uk-button-group{margin:0 25px 0 35px;padding-left:30px;background:url(../images/awesome/header_phone.png) no-repeat left}
+header .phone.uk-button-group .link:last-child{padding-left:25px}
+header .uk-flex-middle .uk-button-green-dash{margin-bottom:1px}
+@media (max-width:1200px){
+header .link{font-size:17px}
+header .email{display:none}
+header .phone.uk-button-group{margin:0 20px 0 30px}
+}
+@media (max-width:959px){
+header .phone.uk-button-group{margin:0 0 5px}
+}
+@media (max-width:767px){
+header .uk-logo{margin:0 0 7px;display:block}
+header .phone.uk-button-group{margin:0 0 7px}
+}
+@media (max-width:639px){
+header{padding:20px 0;text-align:center}
+header .uk-logo{margin-bottom:10px}
+header .phone.uk-button-group{margin:20px 0;background:none;padding:0}
+header .phone.uk-button-group>a{font-size:16px;padding:0!important;margin:0 8px}
+}
+
+header nav{margin-top:28px!important}
+header .uk-navbar-nav li{border-bottom:2px solid #d7d7d8}
+header .uk-navbar-nav li a{height:auto;font:20px/25px 'Proxima Nova Bold';color:#242424;text-transform:none;margin:0 13px -2px;padding:0;border-bottom:2px solid transparent}
+header .uk-navbar-nav li:first-child a{margin-left:0}
+header .uk-navbar-nav li:last-child a{margin-right:0}
+header .uk-navbar-nav li:hover a,header .uk-navbar-nav li:focus a{color:#40a926;border-color:#42bb25}
+header .uk-icon-button{width:28px;height:28px}
+@media (max-width:1200px){
+header .uk-navbar-nav li a{font-size:16px;margin: 0 9px -2px}
+}
+
+header .helpbar h1{font:44px 'Proxima Nova EBold',sana-serif;margin-top:20px}
+header .helpbar p{max-width:550px;font-size:18px;line-height:normal;margin:20px 0 35px}
+header .helpbar.uk-grid img{margin:0 10% -40px 0}
+header .helpbar .uk-search{max-width:620px;width:100%;border:1px solid #d9d9d9;border-radius:2px;padding:4px 4px 4px 30px;background:#fff;box-sizing:border-box}
+header .helpbar .uk-search input{font-size:14px;line-height:46px;padding-right:8px}
+header .helpbar .uk-search .uk-button-green{padding:0 35px 0 15px}
+@media (max-width:1200px){
+header .helpbar h1{font-size:34px;line-height:normal}
+}
+@media (max-width:639px){
+header .helpbar h1{font-size:26px}
+header .helpbar p{font-size:16px}
+header .helpbar .uk-search .uk-button-green{padding:0 15px}
+}
+
+.form-inline>*{max-width:220px;width:100%}
+@media (max-width:459px){
+.form-inline>*{max-width:none;text-align:center}
+}
+
+.product{position:relative;background:#fafafa;border:1px solid #d9d9d9;border-radius:4px;text-align:center;overflow:hidden}
+.product .favorite{top:9px;right:9px;background:#fafafa;color:#c6c6c6;border-radius:100px;padding:6px 6px 5px;border:1px solid transparent}
+.product .favorite:hover{border-color:#42bb25;color:#3fb322}
+.product .title{display:block;font:18px 'Proxima Nova SBold',sans-serif;color:#222;padding:0 10px;margin:10px 0 5px}
+.product .title:hover{text-decoration:none;color:#42bb25}
+.product p{font-size:12px;color:#828282;padding:0 10px;line-height:15px;margin:0}
+.product .uk-button{margin:15px 0 10px}
+
+.callback .header{font-size:16px}
+.callback .header span{color:#7a7a7a}
+.callback p{font-size:16px;line-height:20px;margin-top:5px}
+
+.questions{background:#e9fae4}
+.questions p{font-size:20px}
+
+footer{background:#f1f1f1}
+footer .second{background:#e8e8e8}
+footer .copyright{opacity:0.4}
+footer a{color:#777}
+
+.uk-button-green{background:#42bb25;border:1px dashed #42bb25;font:16px/40px 'Proxima Nova SBold',sans-serif;color:#fff;padding:0 35px;border-radius:2px}
+.uk-button-green:hover,.uk-button-green:focus{background:#39a51e;color:#fff}
+.uk-button-green-dash{background:#e9fae4;border:1px dashed #42bb25;font:16px/40px 'Proxima Nova Bold',sans-serif;cursor:pointer;color:#42bb25;padding:0 15px;text-transform:none;border-radius:1px}
+.uk-button-green-dash:hover,.uk-button-green-dash:focus{background:#e0f2da;color:#40a926}
+.uk-button-green-alter{background:#e9fae4;border:1px solid #42bb25;font:16px/40px 'Proxima Nova SBold',sans-serif;color:#42bb25;padding:0 35px;text-transform:none;border-radius:4px}
+.uk-button-green-alter:hover,.uk-button-green-alter:focus{background:#39a51e;color:#fff}
+.uk-button.large{font-size:18px;line-height:48px;text-transform:none}
+
+.uk-icon-button.empty{background:transparent;border:1px solid #999;opacity:.5}
+.uk-icon-button.empty:hover{opacity:1}
+
+.uk-list-green li{display:inline-block;margin:0 20px 10px 0;vertical-align:middle}
+.uk-list-green> li:nth-child(n+2){margin-top:0}
+.uk-list-green li a{font:20px/20px 'Proxima Nova Bold',sans-serif;color:#42bb25;border-bottom:1px solid #a0dd92}
+.uk-list-green li a:hover{text-decoration:none;border-color:#42bb25}
+@media (max-width:1200px){
+.uk-list-green li a{font-size:18px}
+}
+
+.uk-link-green{font:18px 'Proxima Nova SBold',sans-serif;color:#42bb25;text-decoration:underline}
+.uk-link-green:hover{color:#38a01e;text-decoration:none}
+
+.uk-input{border:1px solid #d7d7d8;border-radius:2px;background:#f7f7f7;height:42px;font-size:16px;padding:0 15px}
+
+.uk-h1,.uk-h2,.uk-h3,.uk-h4,.uk-h5,.uk-h6,h1,h2,h3,h4,h5,h6{color:#242424;margin-bottom:25px}
+.uk-h2,h2{font:24px 'Proxima Nova Bold',sans-serif}
